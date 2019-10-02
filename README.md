@@ -1,3 +1,11 @@
+Site e-commerce répertoriant les meilleurs livres du développeur Front End.
+
+:computer: Technologies utilisées : React & Context API, Netlify Lambda, NodeMailer, Styled Components et Stripe.
+
+Réalisé à l'aide du projet "Créer un site e-commerce avec React et Stripe" d'Anthony Welc.
+
+--
+
 ## Create-React-App-Lambda
 
 This project is a reference demo showing you how to use [Create React App v3](https://github.com/facebookincubator/create-react-app) and [netlify-lambda v1](https://github.com/netlify/netlify-lambda) together in a [Netlify Dev](https://github.com/netlify/netlify-dev-plugin) workflow. You can clone this and immediately be productive with a React app with serverless Netlify Functions in the same repo. Alternatively you can deploy straight to Netlify with this one-click Deploy:
