@@ -76,31 +76,31 @@ class CheckoutForm extends Component {
             })
         });
 
-        // if (resPaiement.ok) {
-        //     const resMail = await fetch("/.netlify/functions/mail", {
-        //         method: "POST",
-        //         body: JSON.stringify({
-        //             amount,
-        //             token: token.id,
-        //             name,
-        //             email,
-        //             address_line1,
-        //             address_city,
-        //             address_zip
-        //         })
-        //     });
-        //     if (resMail.ok) {
-        //         this.setState({valide: true, erreur: ""});
-        //     } else {
-        //         this.setState({
-        //             erreur: `Votre paiement est validé mais nous n'avons pas pu le confirmer au propriétaire du site. Vous pouvez le contacter à ...`
-        //         });
-        //     }
-        // } else {
-        //     this.setState({
-        //         erreur: `Erreur : le paiement n'a pas été validé.`
-        //     });
-        // }
+         if (resPaiement.ok) {
+             const resMail = await fetch("/.netlify/functions/mail", {
+                 method: "POST",
+                 body: JSON.stringify({
+                     amount,
+                     token: token.id,
+                     name,
+                     email,
+                     address_line1,
+                     address_city,
+                     address_zip
+                 })
+             });
+             if (resMail.ok) {
+                 this.setState({valide: true, erreur: ""});
+             } else {
+                 this.setState({
+                     erreur: `Votre paiement est validé mais nous n'avons pas pu le confirmer au propriétaire du site. Vous pouvez le contacter à ...`
+                 });
+             }
+         } else {
+            this.setState({
+                erreur: `Erreur : le paiement n'a pas été validé.`
+             });
+         }
 
         console.log(resPaiement);
     };
