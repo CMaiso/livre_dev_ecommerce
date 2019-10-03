@@ -118,7 +118,7 @@ class CheckoutForm extends Component {
                             name="name"
                             value={this.state.name}
                             placeholder="Jon Snow"
-                            //required
+                            required
                         />
                         <label htmlFor="email">Email</label>
                         <input
@@ -128,7 +128,7 @@ class CheckoutForm extends Component {
                             name="email"
                             value={this.state.email}
                             placeholder="jon@lagarde.com"
-                            //required
+                            required
                         />
                         <label htmlFor="address_line1">Adresse</label>
                         <input
@@ -138,7 +138,7 @@ class CheckoutForm extends Component {
                             name="address_line1"
                             value={this.state.address_line1}
                             placeholder="1 rue de Châteaunoir"
-                            //required
+                            required
                         />
                         <label htmlFor="address_zip">Code Postal</label>
                         <input
@@ -148,7 +148,7 @@ class CheckoutForm extends Component {
                             name="address_zip"
                             value={this.state.address_zip}
                             placeholder="75000"
-                            //required
+                            required
                         />
                         <label htmlFor="address_city">Ville</label>
                         <input
@@ -158,7 +158,7 @@ class CheckoutForm extends Component {
                             name="address_city"
                             value={this.state.address_city}
                             placeholder="Châteaunoir"
-                            //required
+                            required
                         />
                         <label>Carte</label>
                         <CardElement hidePostalCode={true} />
